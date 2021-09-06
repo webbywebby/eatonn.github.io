@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h2 id=demo2>What Can JavaScript Do?</h2>
+
+  <p id="demo">JavaScript can change HTML content.</p>
+
+  <button type="button" onclick="document.getElementById('demo').style.color='blue'">Click Me!</button>
+  <button type="button" onclick="document.getElementById('demo2').style.color='red'">Click Me!</button>
+
+
+  <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+    style="background-color:#ff1e00;width:90px;height:20px;padding:40px;">
+    Click Me</div>
+
+  <script>
+    function mDown(obj) {
+      obj.style.backgroundColor = "#1ec5e5";
+      obj.innerHTML = "Release Meeeeeeeeeee";
+    }
+
+    function mUp(obj) {
+      obj.style.backgroundColor = "#D94A38";
+      obj.innerHTML = "Click Me";
+    }
+  </script>
+</body>
+
+</html>
